@@ -1,8 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn {
+    @apply px-5 uppercase text-sm font-semibold  py-3  cursor-pointer 
+    hover:translate-y-0.5 transform transition text-white tracking-wider
+  }
+  .input {
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    /* border-radius: 5px; */
+    color: #1d1d1df5;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 14px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +30,87 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#body_bg{
+  background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/cW5lDBG/two-pills-in-white-and-red-colors-rotating-on-black-background_4yes1p1alg_thumbnail-1080_01.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+  filter: grayscale(60%);
+  background-color: #161D41;
+}
+#registered_yet{
+  color: #606575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#registered_yet u{
+  color: #211f2a;
+}
+#CloseIcon_login {
+  color: #211f2a;
+  cursor: pointer;
+  font-size: xx-large;
+  margin: 12px;
+  position: fixed;
+}
+#shortBy{
+  appearance: none;
+  background-color: initial;
+  border: 1px solid #e1e1e1;
+  box-shadow: none;
+  color: #606575;
+  cursor: pointer;
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 60px 12px 16px;
+  transition: .3s ease-in-out;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 20px;
+}
+#AddAPhotoRoundedIcon{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#grid_admin_3{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid_admin_3_item_add{
+   
+  background-color: white;
+}
+.grid_admin_3_item{
+  
+  box-sizing: border-box;
+  height: fit-content;
+  position: relative;
+}
+/* .grid_admin_3_item{
+  position: relative;
+} */
+.grid_admin_3_item img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+#errorMSG{
+  width: 100%;
+  text-align: center;
+  background-color: #fff6f6;
+  color: #f26f5c;
+  line-height: 1.71428571em;
+  padding: 0.67857143em 1em;
+  font-size: 13px;
+  border: 1px solid #dc6352;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  margin-top: 20px;
 }
