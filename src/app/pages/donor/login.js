@@ -18,7 +18,7 @@ const Login = () =>{
                     <div className="col-lg-10">
                     <div className=" text-center">
                         <span className="text-[30px] font-semibold " >Login</span>
-                        <h2 className="title">Welcome back, Donater </h2>
+                        <h2 className="title">Welcome back! </h2>
                         <p id="registered_yet">Not registered yet? <u onClick={(()=>setWhichOne(1))}>Create an Account</u></p>
                     </div>
                     <div className="contact-form">
@@ -26,7 +26,7 @@ const Login = () =>{
                                 <div className="col-md-12">
                                     <div className="form-grp">           
                                     <div className="form-grp">
-                                        <input className="input"  type="Phone" onChange={((e)=>{setPhone(e.target.value)})} placeholder="Phone *" />
+                                        <input className="input"  type="number" onChange={((e)=>{setPhone(e.target.value)})} placeholder="Phone *" />
                                     </div>
                                     </div>
                                 </div>

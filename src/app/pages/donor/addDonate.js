@@ -51,7 +51,7 @@ const AddDonete = () => {
                                 <li onClick={(() => { to(-1) })} className="inline-block mr-[12px] mb-[20px] bg-[#161D41] text-sm font-thin p-2  text-white cursor-pointer">Go Back</li>
                             </ul>
                         </div>
-                        <h3 className="text-lg font-semibold">Donate to your NGo</h3>
+                        <h3 className="text-lg font-semibold">Donate to your NGO</h3>
                     </div>
 
                     <div className="grid grid-cols-2 gap-[20px]">
@@ -59,7 +59,7 @@ const AddDonete = () => {
                             <input className="input mb-[1px] mt-0" onChange={((e) => setMedicineName(e.target.value))} type="Name" placeholder="Medicine Name *" />
                         </div>
                         <div className="">
-                            <input className="input mb-[1px] mt-0" placeholder="Purchased Data *" onChange={((e) => setPurchased(e.target.value))} type="text" onFocus={((e) => e.target.type = "date")} />
+                            <input className="input mb-[1px] mt-0" placeholder="Purchased Date *" onChange={((e) => setPurchased(e.target.value))} type="text" onFocus={((e) => e.target.type = "date")} />
                         </div>
                         <div className="">
                             <input className="input mb-[1px] mt-0" type="number" onChange={((e) => setTablet(e.target.value))} placeholder="Tablet Count *" />

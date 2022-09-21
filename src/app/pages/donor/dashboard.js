@@ -24,11 +24,11 @@ const DashboardD = () => {
                 <div className="ml-[10%] mr-[10%] mt-[50px]">
                 <div className="flex justify-between">
                         <div className="my-auto hidden sm:block">
-                            <h5 className="text-textColor text-[16px] font-semibold">Donate List , Hi {data.state.name} </h5>
+                            <h5 className="text-textColor text-[16px] font-semibold">My Donations List , Hi {data.state.name} </h5>
                         </div>
                         <div className="">
                             <ul id="botton_down">
-                                <li onClick={(()=>{to('/add-donate',{state:data.state})})} className="inline-block mr-[12px] mb-[20px] bg-[#161D41] text-sm font-thin p-2 rounded-lg text-white cursor-pointer">Add Field</li>
+                                <li onClick={(()=>{to('/add-donate',{state:data.state})})} className="inline-block mr-[12px] mb-[20px] bg-[#161D41] text-sm font-thin p-2 rounded-lg text-white cursor-pointer">Donate Medicine</li>
                             </ul>
                         </div>
                 </div>

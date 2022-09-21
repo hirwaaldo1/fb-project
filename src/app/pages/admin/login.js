@@ -14,8 +14,7 @@ const LoginAdmin = () =>{
                     <div className="col-lg-10">
                     <div className=" text-center">
                         <span className="text-[30px] font-semibold " >Login</span>
-                        <h2 className="title">Welcome back, Admin </h2>
-                        <p id="registered_yet">Management of our website</p>
+                        <h2 className="title">Welcome back! </h2>
                     </div>
                     <div className="contact-form">
                             <div className="row">

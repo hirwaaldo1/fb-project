@@ -32,8 +32,8 @@ const LoginNGo = () =>{
                     whichOne === 0 ? 
                     <div className="col-lg-10">
                     <div className=" text-center">
-                        <span className="text-[30px] font-semibold ">Login</span>
-                        <h2 className="title">Welcome back, NGO </h2>
+                        <span className="text-[30px] font-semibold ">Login as NGO</span>
+                        <h2 className="title">Welcome back! </h2>
                         <p id="registered_yet">Not registered yet? <u onClick={(()=>setWhichOne(1))}>Create an Account</u></p>
                     </div>
                     <div className="contact-form">

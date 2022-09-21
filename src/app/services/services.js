@@ -6,7 +6,7 @@ const storage = getStorage();
 // import { ref, uploadBytes , getStorage , getDownloadURL} from "firebase/storage";
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 export const signupDonor = async  (data,setLoading,setErrorMsg,setWhichOne) =>{
-    const donorCollectionRef = collection(db,"donors")
+    const donorCollectionRef = collection(db,"donations")
     setErrorMsg(undefined)  
     if(data.name === undefined || data.name === ""){
         setLoading(false)  
@@ -28,7 +28,7 @@ export const signupDonor = async  (data,setLoading,setErrorMsg,setWhichOne) =>{
         setErrorMsg("Check Your Both Passwords")
     }
     else{
-        const phoneValidtion = query(collection(db, "donors"), where("phone", "==", data.phone));
+        const phoneValidtion = query(collection(db, "donations"), where("phone", "==", data.phone));
         const phoneSelect = await getDocs(phoneValidtion);
         if(phoneSelect.docs.length !== 0){
             setLoading(false)  
@@ -43,7 +43,7 @@ export const signupDonor = async  (data,setLoading,setErrorMsg,setWhichOne) =>{
 }
 
 export const loginDonor = async (data,setLoading,setErrorMsg,to) =>{
-    const donorCollectionRef = collection(db,"donors")
+    const donorCollectionRef = collection(db,"donations")
     setErrorMsg(undefined) 
     if(data.phone === undefined || data.phone === ""){
         setLoading(false)  

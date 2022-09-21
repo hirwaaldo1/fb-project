@@ -23,7 +23,7 @@ const DashboardNgo = () => {
                 <div className="ml-[10%] mr-[10%] mt-[50px]">
                 <div className="flex justify-between">
                         <div className="my-auto hidden sm:block">
-                            <h5 className="text-textColor text-[16px] font-semibold">Donate List, Hi {data.state.name}</h5>
+                            <h5 className="text-textColor text-[16px] font-semibold">Donation List, Hi {data.state.name}</h5>
                         </div>
                 </div>
                 {

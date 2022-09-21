@@ -14,7 +14,7 @@ const SignUpNGO = (props) =>{
         <div className="col-lg-10">
                     <div className=" text-center">
                         <span className="text-[30px] font-semibold " >Sign Up</span>
-                        <h2 class="title">Join Us And NGo </h2>
+                        <h2 class="title">Join Us! </h2>
                         <p id="registered_yet">You Have Account? <u onClick={(()=>props.setWhichOne(0))}>Login To Account</u></p>
                     </div>
                     <div className="contact-form">
